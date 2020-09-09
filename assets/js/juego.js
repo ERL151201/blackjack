@@ -38,6 +38,17 @@
     //Esta funcion permite tomar una carta 
     const pedirCarta = () => {
         
+        if (deck.length === 0){
+            throw 'No hay cartas en el deck';
+        }
         
-        return'2C';
+        const carta = deck.pop();
+
+        console.log(deck);
+        console.log(carta);
+        return'carta';
     }
+
+        pedirCarta();
+    
+    
